@@ -8,6 +8,7 @@
 
   @media only screen and (max-width: $bp-medium) {
     margin: 12rem 0;
+    grid-column-gap: 0;
   }
 }
 
@@ -27,5 +28,9 @@
 
   &__text {
     font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-right: 4rem;
   }
 }
