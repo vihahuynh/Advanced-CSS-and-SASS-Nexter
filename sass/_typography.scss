@@ -2,6 +2,14 @@
   font-family: $font-display;
   font-weight: 400;
 }
+
+.heading-1 {
+  @extend %heading;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: $color-grey-light-1;
+}
+
 .heading-2 {
   @extend %heading;
   font-size: 4rem;
