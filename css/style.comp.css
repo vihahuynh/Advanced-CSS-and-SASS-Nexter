@@ -218,7 +218,8 @@ body {
   align-items: start; }
   @media only screen and (max-width: 50em) {
     .features {
-      margin: 12rem 0; } }
+      margin: 12rem 0;
+      grid-column-gap: 0; } }
 
 .feature {
   display: grid;
@@ -233,6 +234,9 @@ body {
     transform: translateY(-1rem); }
   .feature__text {
     font-size: 1.5rem; }
+  @media only screen and (max-width: 50em) {
+    .feature {
+      margin-right: 4rem; } }
 
 .story__pictures {
   grid-column: full-start / col-end 4;
@@ -294,17 +298,21 @@ body {
   grid-column: center-start / center-end;
   margin: 15rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   grid-gap: 6rem; }
   @media only screen and (max-width: 50em) {
     .homes {
-      margin: 12rem 0; } }
+      margin: 12rem 0;
+      grid-column-gap: 0; } }
 
 .home {
   background-color: #f9f7f6;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 3rem; }
+  @media only screen and (max-width: 50em) {
+    .home {
+      margin-right: 6rem; } }
   .home__img {
     width: 100%;
     grid-column: 1 / -1;
@@ -350,6 +358,15 @@ body {
       margin-right: 1rem; }
     .home__location p, .home__rooms p, .home__area p, .home__price p {
       font-size: 1.5rem; }
+    @media only screen and (max-width: 50em) and (min-width: 640px), only screen and (max-width: 550px) and (min-width: 440px) {
+      .home__location, .home__rooms, .home__area, .home__price {
+        margin-left: 1.7rem; }
+        .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
+          height: 1.5rem;
+          width: 1.5rem;
+          margin-right: 0.7rem; }
+        .home__location p, .home__rooms p, .home__area p, .home__price p {
+          font-size: 1.2rem; } }
 
 .gallery {
   background-color: #f9f7f6;
